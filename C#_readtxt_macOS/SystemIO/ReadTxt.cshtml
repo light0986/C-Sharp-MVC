@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "ReadTxt";
+    
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <br>
+    <form>
+        <button name="button" value="first" asp-action="check">Button</button>
+    </form>
+</div>
+<div class="text-center">
+    <h1>@TempData["puttonval"]</h1>
+</div>
