@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "SQLite";
+
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <h3> Product List</h3>
+    <table border="2">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>PRICE</th>
+            <th>QUANTITY</th>
+        </tr>
+        @foreach (var Product in ViewBag.products)
+        {
+        <tr>
+            <td>@Product.ID</td>
+            <td>@Product.NAME</td>
+            <td>@Product.PRICE</td>
+            <td>@Product.QUANTITY</td>
+        </tr>
+        }
+    </table>
+</div>
