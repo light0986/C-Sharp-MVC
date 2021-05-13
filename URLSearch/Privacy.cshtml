@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+@using (Html.BeginForm("Privacy", "Home", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>條件A：</td>
+            <td><input type="text" name="strMsg" /></td>
+        </tr>
+        <tr>
+            <td>條件B：</td>
+            <td><input type="text" name="str2Msg" /></td>
+        </tr>
+    </table>
+    <button type="submit" style="width: inherit">搜尋</button>
+    <br>
+    @ViewData["showMsg"]
+    <h1>
+        <iframe src="@ViewData["showMsg"]" width="500" height="600"></iframe>
+    </h1>
+}
