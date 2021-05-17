@@ -1,0 +1,33 @@
+﻿@model WebApplication1.Models.MS_PRODUCT
+@{
+    ViewData["Title"] = "MSSQL_Edit";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form method="post" action="/Home/MSSQL_Edit">
+    <div class="form-group">
+        <label for="inputNAME" class="col-sm-2">ID編輯</label>
+        <div class="col-sm-10">
+            <input typr="text" id="inputNAME" name="ID" class="form-control" value="@Model.ID" readonly />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputNAME" class="col-sm-2">NAME編輯</label>
+        <div class="col-sm-10">
+            <input typr="text" id="inputNAME" name="NAME" class="form-control" value="@Model.NAME" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPRICE" class="col-sm-2">PRICE編輯</label>
+        <div class="col-sm-10">
+            <input typr="text" id="inputPRICE" name="PRICE" class="form-control" value="@Model.PRICE" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputQUANTITY" class="col-sm-2">QUANTITY編輯</label>
+        <div class="col-sm-10">
+            <input typr="text" id="inputQUANTITY" name="QUANTITY" class="form-control" value="@Model.QUANTITY" />
+        </div>
+    </div>
+    <input type="submit" value="儲存" />
+</form>

@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "MSSQL";
+}
+<h1>@ViewData["Title"]</h1>
+<table>
+    <tr>
+        <th><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="MSSQL">查詢</a></th>
+        <th><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="MSSQL_Create_Product">新增</a></th>
+    </tr>
+</table>
+
+    <div class="text-center">
+        <table border="2">
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>QUANTITY</th>
+                <th>CONTRAL</th>
+            </tr>
+            @foreach (MS_PRODUCT ms_Product in ViewBag.ms_product)
+            {
+        <tr>
+            <td>@ms_Product.ID</td>
+            <td>@ms_Product.NAME</td>
+            <td>@ms_Product.PRICE</td>
+            <td>@ms_Product.QUANTITY</td>
+            <td>
+                @Html.ActionLink("編輯", "MSSQL_Edit", new { id = ms_Product.ID })
+                |
+                @Html.ActionLink("刪除", "MSSQL_DELETE", new { id = ms_Product.ID })
+            </td>
+        </tr>
+}
+        </table>
+    </div>
