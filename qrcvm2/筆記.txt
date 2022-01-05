@@ -15,6 +15,9 @@ html的核心，終究還是javascript為預設。
 連API的url規格，都能隱藏得好好的。
 因為吃重的，是伺服器架構的環境本身麻
 
+
+
+
 請用此簡單範例做嘗試:
 上方button是用javascript觸發改變上方h1.value
 下方button是用asp.net觸發改變下方h1.value
