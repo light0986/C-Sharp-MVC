@@ -12,6 +12,7 @@ html的核心，終究還是javascript為預設。
 當然這也就是說，當人家拜訪你的網站時，
 你的js會被看光光，但asp的程式完全看不到，
 因此當你想與SQLserver溝通時，用ASP.NET會比較直接，且保密
+連API結構都保護得好好的。
 
 請用此簡單範例做嘗試:
 上方button是用javascript觸發改變上方h1.value
